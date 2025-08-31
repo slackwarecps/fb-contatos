@@ -101,10 +101,10 @@ docker build -t fabioalvaro/ms-contatos:1.0 .
 
 ### Executando o container
 
-Para executar o container Docker, execute o seguinte comando:
+Para executar o container Docker em modo detached (em segundo plano), execute o seguinte comando:
 
 ```bash
-docker run -p 8080:8080 fabioalvaro/ms-contatos:1.0
+docker run -d -p 8080:8080 fabioalvaro/ms-contatos:1.0
 ```
 
 A aplicação estará disponível em `http://localhost:8080`.
