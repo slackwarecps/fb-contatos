@@ -88,3 +88,31 @@ Para verificar a saúde da aplicação, acesse o seguinte endpoint:
 http://localhost:8080/ms-contatos/actuator/health
 
 ```
+
+## Docker
+
+### Build da imagem
+
+Para construir a imagem Docker, execute o seguinte comando no diretório raiz do projeto:
+
+```bash
+docker build -t fabioalvaro/ms-contatos:1.0 .
+```
+
+### Executando o container
+
+Para executar o container Docker, execute o seguinte comando:
+
+```bash
+docker run -p 8080:8080 fabioalvaro/ms-contatos:1.0
+```
+
+A aplicação estará disponível em `http://localhost:8080`.
+
+### Enviando a imagem para o Docker Hub
+
+Para enviar a imagem para o Docker Hub, execute o seguinte comando:
+
+```bash
+docker push fabioalvaro/ms-contatos:1.0
+```
